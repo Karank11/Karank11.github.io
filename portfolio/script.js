@@ -59,23 +59,30 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true
     });
 
-    // --- Swiper.js for Skills Carousel ---
+    // --- Swiper.js for Skills Carousel with Coverflow Effect ---
     const swiper = new Swiper('.skills-slider', {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        loop: true,
+        effect: 'coverflow',
         grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true,
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
-        breakpoints: {
-            520: { slidesPerView: 2, spaceBetween: 20, },
-            768: { slidesPerView: 3, spaceBetween: 30, },
-            1024: { slidesPerView: 4, spaceBetween: 40, },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         autoplay: {
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
         },
     });
@@ -94,4 +101,76 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatableElements = document.querySelectorAll('.animatable');
     animatableElements.forEach((el) => observer.observe(el));
 
+    // --- Animated Particle Background ---
+    particlesJS('particles-js', {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#0ef"
+            },
+            "shape": {
+                "type": "circle",
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#0ef",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "repulse": {
+                    "distance": 100,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+            }
+        },
+        "retina_detect": true
+    });
 });
