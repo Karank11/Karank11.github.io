@@ -425,6 +425,14 @@ span {
     .hero-img img { width: 70vw; margin-top: 4rem; }
     .about { flex-direction: column; text-align: center; }
     .about-content h2 { text-align: center; }
+    .about-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #cbd5e1;
+    }
+    .about-text strong {
+        color: var(--accent-color);
+    }
     .about-img img { width: 70vw; margin-top: 4rem; }
 }
 
