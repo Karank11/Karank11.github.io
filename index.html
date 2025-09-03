@@ -91,6 +91,14 @@
                 <h3>Room DB</h3>
             </div>
             <div class="swiper-slide">
+                <img src="portfolio/assets/icons/sqldelight_icon.jpeg" alt="Room DB">
+                <h3>SQLDelight DB</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="portfolio/assets/icons/razorpay_icon.png" alt="Room DB">
+                <h3>Payment Gateway</h3>
+            </div>
+            <div class="swiper-slide">
                 <img src="portfolio/assets/icons/retrofit.png" alt="Retrofit">
                 <h3>Retrofit</h3>
             </div>
@@ -180,15 +188,47 @@
 <section class="contact animatable" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
     <p class="contact-subheading">Have a question or want to work together? Let's connect!</p>
-    <!-- NOTE: Replace the action URL with your own Formspree endpoint -->
-    <form action="https://formspree.io/f/mvgbvpwz" method="POST">
-        <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+
+    <div class="contact-container">
+        <!-- Form -->
+        <form action="https://formspree.io/f/your_unique_form_id" method="POST" class="contact-form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>I'm always interested in discussing new opportunities, innovative projects, or just connecting with fellow developers.</p>
+
+            <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <a href="mailto:karanp.karhale@gmail.com">karanp.karhale@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                <a href="tel:+919119078739">+91 9119078739</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <span>Bangalore, India</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin contact-icon"></i>
+                <a href="https://www.linkedin.com/in/karank11/" target="_blank">linkedin.com/in/karank11/</a>
+            </div>
+
+            <div class="resume-download">
+                <a href="#" class="resume-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
         </div>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
+    </div>
 </section>
 
 <!-- Footer -->
