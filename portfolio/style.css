@@ -276,8 +276,8 @@ span {
     transition: .5s ease;
 }
 .project-card:hover .project-layer { transform: translateY(0); }
-.project-layer h4 { font-size: 3rem; }
-.project-layer p { font-size: 1.6rem; margin: .3rem 0 1.5rem; }
+.project-layer h4 { font-size: 2rem; }
+.project-layer p { font-size: 1.2rem; margin: .3rem 0 1.2rem; }
 .project-layer .tech-stack { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; margin-bottom: 1.5rem; }
 .project-layer .tech-stack span { background: rgba(0,0,0,0.5); color: var(--text-color); padding: .5rem 1rem; border-radius: 1rem; font-size: 1.2rem; }
 .project-layer a {
