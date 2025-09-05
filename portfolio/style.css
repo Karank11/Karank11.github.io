@@ -16,6 +16,10 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
+    --bg-dark: #0f172a;
+    --bg-section: #1e293b;
+    --bg-card: #334155;
+    --border-color: #475569;
 }
 
 html {
@@ -196,7 +200,6 @@ span {
 .skills { padding-bottom: 7rem; }
 .skills .skills-slider {
     width: 100%;
-    padding-top: 2rem;
     padding-bottom: 5rem;
 }
 .skills .swiper-slide {
@@ -204,7 +207,7 @@ span {
     border: .2rem solid transparent;
     border-radius: .8rem;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
     transition: transform 0.4s ease, opacity 0.4s ease, border-color 0.4s ease;
     cursor: grab;
     width: 25rem; /* Set a fixed width for coverflow slides */
@@ -213,8 +216,8 @@ span {
     border-color: var(--main-color);
     transform: translateY(-1rem);
 }
-.skills .swiper-slide img { height: 7rem; margin-bottom: 1rem; }
-.skills .swiper-slide h3 { font-size: 1.8rem; }
+.skills .swiper-slide img { height: 5rem; margin-bottom: 1rem; }
+.skills .swiper-slide h3 { font-size: 1.2rem; }
 .swiper-pagination-bullet-active { background: var(--main-color); }
 .swiper-button-next,
 .swiper-button-prev {
@@ -224,6 +227,51 @@ span {
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
     color: var(--text-color);
+}
+
+.skills-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.skill-category {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.skill-category h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+    font-size: 1.6rem;
+}
+
+.skill-category-icon {
+    margin-right: 0.75rem;
+    font-size: 1.6rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tag {
+    background: var(--bg-section);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
 }
 
 /* Experience Section */
